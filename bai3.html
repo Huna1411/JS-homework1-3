@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* BÀI 3.Viết chương trình vào đoạn text, in ra text mới với chư
+      các đầu tiên viết hoa */
+      //  *  charAt(index) là một phương thức của lớp String được sử dụng để
+      // truy xuất kí tự tại một chỉ số cụ thể trong chuỗi. phương thức này
+      // trả vè kí tự tại vị trí được chỉ định dưới dạng char.
+      // cú pháp của charAt: string.charAt(index);
+      //   index là chỉ số của kí tự trả về
+      //   +nếu index là 0 thì kí tự ở vị trị đâuf tiên được trả về
+      //   +nếu index là 1 thì kí tự ở vị trí thứ hai được trả về
+      // * slice(strat,end) là một hàm của đối tượng String , nó cho phép lấy một
+      // phần của chuỗi bằng cách định vị hai vị trí bắt đâuf và kết thúc cần
+      // lấy. nó trả về chuỗi mới, không thay đổi giá trị của chuỗi gôc
+
+      let str = prompt("Nhập vào 1 chuỗi");
+      var arr1 = str.split(" ");
+      var arr2 = [];
+
+      for (var x = 0; x < arr1.length; x++) {
+        arr2[x] =
+          arr1[x].charAt(0).toUpperCase() +
+          arr1[x].slice(1).toLowerCase() +
+          " ";
+      }
+
+      console.log(arr2.join(""));
+    </script>
+  </body>
+</html>
